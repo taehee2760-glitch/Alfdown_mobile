@@ -24,9 +24,9 @@ import java.util.concurrent.atomic.*;
 public class MainActivity extends Activity {
     static final String BASE="https://alfred-dsm-shopify-exports-prod.s3.us-west-2.amazonaws.com/";
     static final String[] GROUP_NAMES={"현악기","목관악기","금관악기","타악기 외"};
-    static final String[][] CODES={{"VN","VA","VC","SB"},{"P","F","O","C","AC","BC","B","AX","TX","BTX"},{"H","T","TN","BBC","BTC","TB"},{"M","TMP","PC","K","H"}};
+    static final String[][] CODES={{"VN","VA","VC","SB"},{"P","F","O","C","AC","BC","B","AX","TX","BTX"},{"H","T","TN","BBC","BTC","TB"},{"M","TMP","PC","D","K","H"}};
     static final String[][] LABELS={{"바이올린","비올라","첼로","스트링베이스"},{"피콜로","플루트","오보에","클라리넷","알토클라리넷","베이스클라리넷","바순","알토색소폰","테너색소폰","바리톤색소폰"},{"호른","트럼펫","트롬본","유포늄 B.C.","유포늄 T.C.","튜바"},{"말렛퍼커션","팀파니","퍼커션","피아노","하프"}};
-    static final Set<String> SINGLE=new HashSet<>(Arrays.asList("SB","BC","BTX","TMP","K"));
+    static final Set<String> SINGLE=new HashSet<>(Arrays.asList("SB","BC","BTX","TMP","D","K"));
     static final String[] EXTS={"png","jpg","jpeg","webp"};
     final CheckBox[][] checks=new CheckBox[4][];
     final CheckBox[] extChecks=new CheckBox[4];
